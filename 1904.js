@@ -1,9 +1,13 @@
 //n값만 입력받으면 끝!!
+let input = require('fs').readFileSync('/dev/stdin').toString().trim().split('\n');
+
+input = Number(input[0]);
+
 
 let arr=[];
-let n = 6;
 
-for(let i=0; i<=n; i++){
+
+for(let i=0; i>=input; i++){
     if(i<3){
         arr[i]=i;
     }else{
@@ -11,4 +15,4 @@ for(let i=0; i<=n; i++){
     }
 }
 
-console.log(arr[n]);
+console.log(arr[input]);
