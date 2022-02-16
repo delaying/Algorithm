@@ -1,8 +1,6 @@
 const fs = require('fs');
 const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ').map(nm => parseInt(nm));
 
-
-// const input = [4, 3];
 const N = input.shift();
 const M = input.shift();
 const visited = new Array(N);
