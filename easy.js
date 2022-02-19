@@ -73,3 +73,50 @@
 // console.log(((A%C) * (B%C))%C);
 
 
+// //1330
+// const input = require('fs').readFileSync('/dev/stdin').toString().split(' ');
+
+// const A = Number(input[0]);
+// const B = Number(input[1]);
+
+// if(A < B){
+//     console.log('<');
+// }else if(A > B){
+//     console.log('>');
+// }else{
+//     console.log('==');
+// }
+
+
+
+// //9498
+// const input = require('fs').readFileSync('/dev/stdin').toString().trim();
+
+// const score = Number(input);
+
+// if(score >= 90){
+//     console.log('A');
+// }else if(score >=80 && score <=89){
+//     console.log('B');
+// }else if(score >=70 && score <=79){
+//     console.log('C');
+// }else if(score >= 60 && score <=69){
+//     console.log('D');
+// }else{
+//     console.log('F');
+// }
+
+// //2753
+// const fs = require('fs');
+// const input = fs.readFileSync("/dev/stdin").toString().trim();
+
+// const y = Number(input);
+
+// if( (y % 4 == 0) && ( y % 100 != 0)){
+//     console.log(1);
+// }else if(y % 400 == 0 && y % 4 == 0){
+//     console.log(1);
+// }else{
+//     console.log(0);
+// }
+
