@@ -130,5 +130,79 @@
 //     console.log(Number(res[0]) + Number(res[1]));
 // }
 
+// //14681
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// });
+
+// let input = [];
+// rl.on('line', function(line){
+//     input.push(parseInt(line));
+// }).on('close',function(){
+//     const x = input[0];
+//     const y = input[1];
+
+//     if(x>0 && y>0){
+//         console.log("1");
+//     }else if(x>0 && y<0){
+//         console.log("4");
+//     }else if(x<0 && y>0){
+//         console.log("2");
+//     }else{
+//         console.log("3");
+//     }
+
+//     process.exit();
+// })
+
+// //2739
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// });
+
+// let input = [];
+// rl.on('line', function(line){
+//     input.push(parseInt(line));
+// }).on('close',function(){
+//     const n = input[0];
+
+//     for(let i=1; i<=9; i++){
+//         console.log(`${n} * ${i} = ${n*i}`);
+//     }
+
+//     process.exit();
+// })
+
+// //8393
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// });
+
+// let input = [];
+// rl.on('line', function(line){
+//     input.push(parseInt(line));
+// }).on('close',function(){
+//     const n = input[0];
+//     let result = 0;
+
+//     for(let i=1; i<=n; i++){
+//         result += i;
+//     }
+//     console.log(result);
+
+//     process.exit();
+// })
+
+
+
+
+
+
 
 
