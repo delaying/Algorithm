@@ -200,9 +200,35 @@
 // })
 
 
+// //2742
+// const readline = require('readline');
+// const rl = readline.createInterface({
+//     input:process.stdin,
+//     output:process.stdout
+// });
+
+// let input = [];
+// rl.on('line', function(line){
+//     input.push(parseInt(line));
+// }).on('close',function(){
+
+//     for(let i=input[0]; i>=1; i--){
+//         console.log(i);
+//     }
+
+//     process.exit();
+// })
 
 
+// //11022
+// const fs = require('fs');
+// const input = fs.readFileSync("/dev/stdin").toString().split('\n');
 
 
+// for(let i =1; i<=input[0]; i++){
+//     let arr = input[i].split(' ');
+//     let result = Number(arr[0]) + Number(arr[1]);
+//     console.log(`Case #${i}: ${result}`);
+// }
 
 
