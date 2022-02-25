@@ -231,4 +231,60 @@
 //     console.log(`Case #${i}: ${result}`);
 // }
 
+// //15552 
+// let fs = require("fs");
+// let input = fs.readFileSync("dev/stdin").toString().split("\n");
+
+// let answer = ''
+
+// for(let i = 1; i <= input[0]; i++) {
+//     tmp = input[i].split(' ')
+//     answer += parseInt(tmp[0]) + parseInt(tmp[1]) + "\n"
+// }
+
+// console.log(answer)
+
+// //2438
+// const fs = require("fs");
+// let input = fs.readFileSync('/dev/stdin').toString();
+
+// for(let i = 1; i<=input; i++){
+//     if(i>1){
+//         for(let j=1; j<i;j++){
+//             process.stdout.write("*");
+//         }
+//     }
+//     console.log("*");
+// }
+
+// //2439
+// const fs = require("fs");
+// let input = fs.readFileSync('/dev/stdin').toString();
+
+// for(let i = input; i>=1; i--){
+//     for(let j=1; j<i;j++){
+//         process.stdout.write(" ");
+//     }
+//     if(i<=input){
+//         for(let j=i; j<=input; j++){
+//             process.stdout.write("*");
+//         }
+//     }
+//     console.log();
+// }
+
+// //10871
+// const fs = require("fs");
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+// const n = input[0].split(' ');
+// const arr = input[1].split(' ');
+// let result = '';
+
+// for(let i=0; i<Number(n[0]); i++){
+//     if(Number(arr[i])<Number(n[1])){
+//         result += Number(arr[i])+ ' ';
+//     }
+// }
+// process.stdout.write(result);
 
