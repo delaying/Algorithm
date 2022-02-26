@@ -288,3 +288,16 @@
 // }
 // process.stdout.write(result);
 
+
+//10952
+const fs = require("fs");
+const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+    for(let i =0; i<input.length;i++){
+        let arr=input[i].split(' ');
+        if(arr[0]==0 && arr[1]==0){
+            break;
+        }
+        let result = Number(arr[0])+Number(arr[1]);
+        console.log(result);
+    }
