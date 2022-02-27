@@ -334,39 +334,29 @@
 
 
 
-//1110
+//10818
 const fs = require("fs");
-const input = fs.readFileSync('/dev/stdin').toString();
+const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
-if(Number(input) < 10){
-    input += 0;
-}
+const n = Number(input[0]);
+const numberStr = input[1].split(' ');
 
-const x = Number(input);
-let ten = Math.floor(x/10);
-let one = Math.floor(x%10);
-let count = 0;
-let result = 0;
+let arr = numberStr.map(function(cur) {
+    return Number(cur);
+  });
+let min = arr[0];
+let max = arr[0];
+arr[n]=arr[0];
 
-
-while(true){
-    result = ten + one;
-    if(result < 10){
-            ten = one;
-            one = result
-            count +=1;
+for(let i=0; i<=n; i++){
+    if(arr[i] > arr[i+1] && max < arr[i]){
+        max = arr[i];
+    }else if(arr[i] < arr[i+1] && min > arr[i]){
+        min = arr[i];
     }else{
-        ten = one;
-        one = Math.floor(result%10);
-        count +=1;
+        continue;
     }
-
-    if(x == ((ten*10)+one)){
-        console.log(count);
-        break;
-    }
-
-
 }
 
+console.log(min, max);
 
