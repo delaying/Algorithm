@@ -289,15 +289,84 @@
 // process.stdout.write(result);
 
 
-//10952
-const fs = require("fs");
-const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+// //10952
+// const fs = require("fs");
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
-    for(let i =0; i<input.length;i++){
-        let arr=input[i].split(' ');
-        if(arr[0]==0 && arr[1]==0){
-            break;
-        }
-        let result = Number(arr[0])+Number(arr[1]);
-        console.log(result);
+// for(let i =0; i<input.length;i++){
+//     let arr=input[i].split(' ');
+//     if(arr[0]==0 && arr[1]==0){
+//         break;
+//     }
+//     let result = Number(arr[0])+Number(arr[1]);
+//     console.log(result);
+// }
+
+// //새로운방법
+// while(input[0][0]!=0){
+//     const numbers = input.shift().split(" ");
+    
+//     console.log(+numbers[0] + +numbers[1]);
+// }
+
+
+//10951
+// const fs = require("fs");
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+// for(let i = 0; i<input.length; i++){
+//     let num = input[i].split(' ');
+//     if(!num[0]){
+//         break;
+//     }
+//     console.log(Number(num[0])+ Number(num[1]));
+// }
+
+// let i = 0;
+// while(i<=input.length){
+//     const num = input.shift().split(' ');
+//     if(!num[0]){
+//         break;
+//     }
+//     console.log(Number(num[0])+ Number(num[1]));    
+//     i++;
+// }
+
+
+
+//1110
+const fs = require("fs");
+const input = fs.readFileSync('/dev/stdin').toString();
+
+if(Number(input) < 10){
+    input += 0;
+}
+
+const x = Number(input);
+let ten = Math.floor(x/10);
+let one = Math.floor(x%10);
+let count = 0;
+let result = 0;
+
+
+while(true){
+    result = ten + one;
+    if(result < 10){
+            ten = one;
+            one = result
+            count +=1;
+    }else{
+        ten = one;
+        one = Math.floor(result%10);
+        count +=1;
     }
+
+    if(x == ((ten*10)+one)){
+        console.log(count);
+        break;
+    }
+
+
+}
+
+
