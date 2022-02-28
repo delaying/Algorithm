@@ -334,29 +334,61 @@
 
 
 
-//10818
-const fs = require("fs");
-const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+// //10818
+// const fs = require("fs");
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
 
-const n = Number(input[0]);
-const numberStr = input[1].split(' ');
+// const n = Number(input[0]);
+// const numberStr = input[1].split(' ');
 
-let arr = numberStr.map(function(cur) {
-    return Number(cur);
-  });
-let min = arr[0];
-let max = arr[0];
-arr[n]=arr[0];
+// let arr = numberStr.map(function(cur) {
+//     return Number(cur);
+//   });
+// let min = arr[0];
+// let max = arr[0];
+// arr[n]=arr[0];
 
-for(let i=0; i<=n; i++){
-    if(arr[i] > arr[i+1] && max < arr[i]){
-        max = arr[i];
-    }else if(arr[i] < arr[i+1] && min > arr[i]){
-        min = arr[i];
-    }else{
-        continue;
-    }
-}
+// for(let i=0; i<=n; i++){
+//     if(arr[i] > arr[i+1] && max < arr[i]){
+//         max = arr[i];
+//     }else if(arr[i] < arr[i+1] && min > arr[i]){
+//         min = arr[i];
+//     }else{
+//         continue;
+//     }
+// }
 
-console.log(min, max);
+// console.log(min, max);
 
+// //2562
+// const fs =require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+// let max = input[0];
+// let count = 0;
+
+// for(let i =1; i<9;i++){
+//     if(Number(input[i])>max){
+//         max = input[i];
+//         count = i;
+//     }
+// }
+
+// console.log(max);
+// console.log(count+1);
+
+// //2577
+// let input = require('fs').readFileSync('/dev/stdin').toString().split('\n').map(x=> Number(x));
+
+// const num = input[0]*input[1]*input[2];
+// const result = num.toString();
+
+
+// for(let i =0; i<10;i++){
+//     let count = 0;
+//     for(let j =0; j< result.length;j++){
+//         if(i === Number(result[j])){
+//             count++;
+//         }
+//     }
+//     console.log(count);
+// }
