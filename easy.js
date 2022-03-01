@@ -393,23 +393,28 @@
 //     console.log(count);
 // }
 
-// //1546
-let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
-const x = input[1].split(' ');
-const num = [];
-const result = [];
-const max = num[0];
+// // //1546
+// let input = require('fs').readFileSync('/dev/stdin').toString().split('\n');
+// const x = input[1].split(' ');
+// const num = [];
+// const result = [];
+// let max = 0;
+// let ans = 0;
 
-for(let i =0; i<input[0];i++){
-    num = Number(x[i])
-    if(num[i]>max){
-        max = num[i];
-    }
-    console.log(max);
+// for(let i =0; i<input[0];i++){
+//     num[i] = parseFloat(x[i]);
 
-}
+//     if(num[i] > max){
+//         max = num[i];
+//     }
+// }
 
-for(let i =0 ; i<input[0];i++){
-    result[i] = num[i]/max*100;
-    console.log(result[i]);
-}
+// for(let i =0 ; i<input[0];i++){
+//     result[i] = num[i]/max*100;    
+// }
+
+// for(let i =0; i<input[0];i++){
+//     ans +=result[i];
+// }
+
+// console.log(ans/input[0]);
