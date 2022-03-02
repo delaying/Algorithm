@@ -65,9 +65,32 @@
 // console.log(res);
 
 
-//10809
+// //10809
+// //내가 푼거.
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split('');
+
+// const arr = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','w','x','y','z'];
+// const res = [];
 
 
+// for(let i=0; i<input.length-1;i++){
+
+//     for(let j=0 ;j<arr.length;j++){
+//         if(arr[j]==input[i] && (res[j]<0 || res[j]==null) ){
+//             res[j] = i;
+//         }else{
+//             if(res[j]==null){
+//                 res[j] = -1;
+//         }
+//     }
+// }
+//  }
+
+
+// for(let j=0; j<arr.length;j++){
+//     process.stdout.write(`${res[j]} `);
+// }
 
 
 
