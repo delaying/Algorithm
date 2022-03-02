@@ -45,7 +45,44 @@
 //     console.log(`${n.toFixed(3)}%`);
 // }
 
+// //11654
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim();
 
-// 15596
-// 4673
+// const res = input.charCodeAt();
+// console.log(res);
+
+// //11720
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+// let arr = input[1].split('');
+// let res = 0;
+
+// for(let i =0;i<input[0];i++){
+//     res += Number(arr[i]);
+// }
+// console.log(res);
+
+
+//10809
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // 4673
+// let arr = [];
+// for(let i =0; i<10000;i++){
+//     arr[i] =false;
+// }
+
 // 1065
