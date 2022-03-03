@@ -93,19 +93,26 @@
 // }
 
 
+// //2675
+// let fs = require("fs");
+// let input = fs.readFileSync("/dev/stdin").toString().trim().split("\n");
 
+// for (let i = 1; i < input.length; i++) {
+// 	let arr = input[i].split(" ");
+// 	let value = "";
 
-
-
-
-
-
-
-
-// // 4673
-// let arr = [];
-// for(let i =0; i<10000;i++){
-//     arr[i] =false;
+// 	for (let j = 0; j < arr[1].length; j++) {
+// 		value += arr[1][j].repeat(Number(arr[0]));
+// 	}
+// 	console.log(value);
 // }
 
-// 1065
+// //1152
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
+
+// if(input==''){
+//     console.log("0");
+// }else{
+//     console.log(input.length);
+// }
