@@ -116,3 +116,24 @@
 // }else{
 //     console.log(input.length);
 // }
+
+// //2908
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
+
+// const x = input[0].trim().split('');
+// const y = input[1].trim().split('')
+
+// let num1 = '';
+// let num2 = '';
+
+// for(let i=2; i>=0;i--){
+//     num1 +=x[i];
+//     num2 +=y[i];
+// }
+
+// if(Number(num1)>Number(num2)){
+//     console.log(num1);
+// }else{
+//     console.log(num2);
+// }
