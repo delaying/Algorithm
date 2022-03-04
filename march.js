@@ -137,3 +137,21 @@
 // }else{
 //     console.log(num2);
 // }
+
+//5622
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim();
+
+// const str = input.split('');
+
+// const arr = ['','','',['A','B','C'],['D','E','F'],['G','H','I'],['J','K','L'],['M','N','O'],['P','Q','R','S'],['T','U','V'],['W','X','Y','Z']]
+// let result = 0;
+// for (let i=3; i<=10; i++){
+//     for(let j=0;j<=3;j++){
+//         if(arr[i][j]===str[i-3]){
+//             result += i;
+//             console.log(result);
+//         }
+//     }
+// }
+// console.log('결과'+result);
