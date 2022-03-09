@@ -255,10 +255,25 @@
 // console.log(Math.ceil((V - B) / (A - B)));
 
 
-//2839
-let fs = require("fs");
-let input = fs.readFileSync("/dev/stdin").toString().trim();
+// //2839
+// let fs = require("fs");
+// let input = fs.readFileSync("/dev/stdin").toString().trim();
 
-let a = 0;
+// let sugar = Number(input);
+// let count = 0;
+
+// while(true){
+//     if(sugar % 5 === 0){
+//         console.log(sugar/5+count);
+//         break;
+//     }else if(sugar <= 0){
+//         console.log(-1);
+//         break;
+//     }
+//     sugar = sugar -3;
+//     count ++;
+// }
+
+
 
 
