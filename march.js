@@ -275,5 +275,19 @@
 // }
 
 
+// //10757
+// let fs = require("fs");
+// let input = fs.readFileSync("/dev/stdin").toString().trim().split(' ');
 
 
+// console.log(Number(input[0])+Number(input[1]));
+
+
+// //큰 수를 처리하기 위한 함수 BigInt,
+// // 스트링으로 출력해주어야함.
+// let fs = require('fs');
+// let input = fs.readFileSync('/dev/stdin').toString().split(' ');
+// const A = BigInt(input[0]);
+// const B = BigInt(input[1]);
+// let answer = A + B;
+// console.log(answer.toString());
