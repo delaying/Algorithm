@@ -291,3 +291,68 @@
 // const B = BigInt(input[1]);
 // let answer = A + B;
 // console.log(answer.toString());
+
+
+// //1978
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+// let arr = [];
+// let count = 0;
+
+// function primeNumber(n){
+//     if(n < 2){
+//         return;
+//     }
+
+//     for(let i =2; i<n; i++){
+//         if(n%i ===0){
+//             return;
+//         }
+//     }
+//     count ++;
+// }
+
+// for(let i =0; i<input[0];i++){
+//     arr=input[1].split(' ');
+//     primeNumber(arr[i]);
+// }
+
+// console.log(count);
+
+// //2581
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+// let sum = 0;
+// let min = input[1];
+
+// function primeNumber(n){
+//     if(n < 2){
+//         return;
+//     }
+//     if(n == 2){
+//         min = 2;
+//     }
+
+//     for(let i =2; i<n; i++){
+//         if(n%i ===0){
+//             return;
+//         }
+        
+//     }
+//     sum =sum + n;
+    
+//     if(min > n){
+//         min = n;
+//     }
+// }
+
+// for(let i = Number(input[0]); i<=Number(input[1]);i++){
+//     primeNumber(i);
+// }
+
+// if(sum ==0){
+//     console.log(-1);
+// }else{
+//     console.log(sum);
+//     console.log(min);   
+// }
