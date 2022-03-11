@@ -356,3 +356,81 @@
 //     console.log(sum);
 //     console.log(min);   
 // }
+
+// //11653
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim();
+
+// let rest = input;
+
+// function primeNumber(n){
+    
+//     for(let i =2; i<input; i++){
+//         if(n%i ===0){
+//             console.log(i);
+//             rest = n/i;
+//             return;
+//         }
+//     }
+// }
+
+// for(let i=2; i<=input;i++){
+//     if(input%i ==0){
+//         rest = input/i;
+//         console.log(i);
+//         while(rest>1){
+//             primeNumber(rest);
+//         }
+//         break;
+//     }
+// }
+
+
+// //1929
+// //시간초과 남 ㅜㅜ 
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split(' ');
+
+// let num=0;
+
+// for(let i =Number(input[0]); i<=Number(input[1]);i++){
+//     for(let j =2; j<Number(input[1]); j++){
+//         if(i%j ===0 && i/j!=1){
+        
+//             break;
+            
+//         }
+//         if(i%j===0){
+//             console.log(j);
+//             break;
+//         }
+//     }
+// }
+
+// //에라토스테네스의 체 사용해야함
+// const fs = require('fs');
+// const input = fs.readFileSync("/dev/stdin").toString().trim().split(" ").map(v => +v);
+
+// const start = input[0];
+// const end = input[1];
+
+
+// let prime = [];
+// for (let i = 0; i <= end; i++) {
+//   prime.push(true);
+// }
+// // prime[0] = false;
+// // prime[1] = false;
+
+
+// for (let i = 2; i * i <= end; i++) {
+//   if (prime[i])
+//     for (let j = i * i; j <= end; j += i)
+//       prime[j] = false;
+// }
+
+// for (let i = start; i <= end; i++) {
+//   if (prime[i] == true) {
+//     console.log(i);
+//   }
+// }
