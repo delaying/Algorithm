@@ -476,3 +476,16 @@
 //     console.log("wrong")
 //   }
 // }
+
+//1085
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().split(' ');
+
+// const x = input[0];
+// const y = input[1];
+// const w = input[2];
+// const h = input[3];
+
+// const counter = [x,y, w-x, h-y];
+
+// console.log(Math.min.apply(null,counter));
