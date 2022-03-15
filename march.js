@@ -489,3 +489,4 @@
 // const counter = [x,y, w-x, h-y];
 
 // console.log(Math.min.apply(null,counter));
+
