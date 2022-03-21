@@ -235,3 +235,27 @@
 // }
 
 // console.log(result.join(" "));
+
+// //1712
+// const fs = require('fs');
+// const input = fs.readFileSync('/dev/stdin').toString().trim()
+//     .split(' ').map((el)=> Number(el));
+
+// let bep = 0;
+
+// const A = input[0];
+// const B = input[1];
+// const C = input[2];
+
+// if(B>=C){
+//     console.log(-1);
+    
+// }else{
+//     bep = A/(C-B);
+//     console.log(Math.floor(bep)+1);
+// }
+
+
+
+
+
