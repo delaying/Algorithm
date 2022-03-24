@@ -301,3 +301,20 @@
 // for (let i = 0; i < input.length; i++) {
 //   console.log(input[i]);
 // }
+
+
+//2751
+// const fs = require("fs");
+// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+
+
+// for (let i=0; i<input[0]; i++) {
+//     if ()
+//     i.toString().split("")
+//         .map(n => parseInt(n))
+//         .reduce((acc, n) => acc + n, 0) + i === num) {
+
+//         answer = i;
+//         break;
+//     }
+// }
