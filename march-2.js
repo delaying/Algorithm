@@ -304,13 +304,22 @@
 
 
 //2751
-// const fs = require("fs");
-// const input = fs.readFileSync('/dev/stdin').toString().trim().split('\n');
+let input = [];
+
+require('readline')
+  .createInterface(process.stdin, process.stdout)
+  .on('line', function (line) {
+    input.push(line.trim());
+  })
+  .on('close', function () {
+    const [N, ...numList] = input.map((e) => Number(e));
+    const result = numList.sort((a, b) => a - b);
+    console.log(result.join('\n'));
+  });
 
 
-// for (let i=0; i<input[0]; i++) {
-//     if ()
-//     i.toString().split("")
+// for (let i=start; i<num; i++) {
+//     if (i.toString().split("")
 //         .map(n => parseInt(n))
 //         .reduce((acc, n) => acc + n, 0) + i === num) {
 
