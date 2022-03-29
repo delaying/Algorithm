@@ -325,3 +325,14 @@
 // console.log(input.sort((a, b) => b - a).join(''));
 
 
+//11651
+const fs=require('fs');
+const input = fs.readFileSync('/dev/stdin').toString().split('\n');
+
+let arr=0;
+
+for(let i=0; i<input[0];i++){
+    if(input[i][1])
+}
+
+console.log(arr);
