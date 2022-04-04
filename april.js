@@ -20,3 +20,15 @@
 //     .sort((a, b) => a > b ? 1 : (a < b ? -1 : 0))
 //     .sort((a, b) => a.length - b.length)
 //     .forEach(i => console.log(i));
+
+//2108
+const [n, ...num] = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n").map((e) => Number(e));
+// Array.from(new Set(num));
+
+
+//산술평균
+let result = num.reduce(function add(sum, currValue){
+    return sum +currValue;
+},0);
+
+console.log(Math.round(result/5));
