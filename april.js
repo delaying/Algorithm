@@ -33,14 +33,30 @@
 
 
 
-// //2108
-// const [n, ...num] = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n").map((e) => Number(e));
-// // Array.from(new Set(num));
+//2108
+const [n, ...num] = require("fs").readFileSync("/dev/stdin").toString().trim().split("\n").map((e) => Number(e));
+// Array.from(new Set(num));
 
 
-// //산술평균
-// let result = num.reduce(function add(sum, currValue){
-//     return sum +currValue;
-// },0);
+//산술평균
+let result = num.reduce(function add(sum, currValue){
+    return sum +currValue;
+},0);
 
-// console.log(Math.round(result/5));
+console.log(Math.round(result/n));
+
+//중앙값
+const arr = num.sort();
+console.log(arr[Math.round(arr.length/2)-1]);
+
+//최빈값
+
+
+
+//범위
+if(arr[n-1]<=0){
+    arr[n-1]=arr[n-1]*(-1);
+    console.log(arr[n-1]+arr[0]);
+}else{
+    console.log(arr[n-1]-(arr[0]));
+}
